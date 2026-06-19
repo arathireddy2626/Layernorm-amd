@@ -1,0 +1,4418 @@
+[
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:51.037747+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.161535,
+        "stddev_ms": 0.3924,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3963,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064011,
+        "baseline_stddev_ms": 0.005905
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:51.366291+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.039387,
+        "stddev_ms": 0.00331,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.6252,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064011,
+        "baseline_stddev_ms": 0.005905
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:51.663579+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.144613,
+        "stddev_ms": 0.005378,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4426,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064011,
+        "baseline_stddev_ms": 0.005905
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:51.986655+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.039464,
+        "stddev_ms": 0.002574,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.622,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064011,
+        "baseline_stddev_ms": 0.005905
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:31:52.886269+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.150551,
+        "stddev_ms": 0.006496,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6367,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.095856,
+        "baseline_stddev_ms": 0.323922
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:31:53.183301+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.039128,
+        "stddev_ms": 0.002418,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 2.4498,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.095856,
+        "baseline_stddev_ms": 0.323922
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:31:53.499547+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.147156,
+        "stddev_ms": 0.008598,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6514,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.095856,
+        "baseline_stddev_ms": 0.323922
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:31:53.801097+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.039492,
+        "stddev_ms": 0.00277,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 2.4272,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.095856,
+        "baseline_stddev_ms": 0.323922
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:31:54.715071+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.154747,
+        "stddev_ms": 0.319441,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5067,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078412,
+        "baseline_stddev_ms": 0.02137
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:31:55.082160+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034606,
+        "stddev_ms": 0.009464,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 2.2659,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078412,
+        "baseline_stddev_ms": 0.02137
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:31:55.402417+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.149753,
+        "stddev_ms": 0.319394,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5236,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078412,
+        "baseline_stddev_ms": 0.02137
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:31:55.725811+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.039064,
+        "stddev_ms": 0.00266,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 2.0073,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078412,
+        "baseline_stddev_ms": 0.02137
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:31:56.952901+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.163753,
+        "stddev_ms": 0.268171,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5353,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.08765,
+        "baseline_stddev_ms": 0.018852
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:31:57.286936+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.0413,
+        "stddev_ms": 0.004757,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 2.1223,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.08765,
+        "baseline_stddev_ms": 0.018852
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:31:57.617643+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.155273,
+        "stddev_ms": 0.263914,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5645,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.08765,
+        "baseline_stddev_ms": 0.018852
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:31:57.953834+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.041613,
+        "stddev_ms": 0.004603,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 2.1063,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.08765,
+        "baseline_stddev_ms": 0.018852
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:58.852132+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.152141,
+        "stddev_ms": 0.406149,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4248,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064636,
+        "baseline_stddev_ms": 0.010917
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:59.182914+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.035593,
+        "stddev_ms": 0.004169,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.816,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064636,
+        "baseline_stddev_ms": 0.010917
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:59.499240+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.145798,
+        "stddev_ms": 0.272496,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4433,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064636,
+        "baseline_stddev_ms": 0.010917
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:31:59.819752+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.035255,
+        "stddev_ms": 0.004086,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.8334,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.064636,
+        "baseline_stddev_ms": 0.010917
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:00.719093+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.156994,
+        "stddev_ms": 0.278193,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3838,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06026,
+        "baseline_stddev_ms": 0.003791
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:01.080373+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.040195,
+        "stddev_ms": 0.005302,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.4992,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06026,
+        "baseline_stddev_ms": 0.003791
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:01.438168+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.142851,
+        "stddev_ms": 0.273771,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4218,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06026,
+        "baseline_stddev_ms": 0.003791
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:01.752266+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.03744,
+        "stddev_ms": 0.001531,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.6095,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06026,
+        "baseline_stddev_ms": 0.003791
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:02.674568+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.136535,
+        "stddev_ms": 0.410596,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5667,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.077369,
+        "baseline_stddev_ms": 0.285351
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:03.023859+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.033924,
+        "stddev_ms": 0.00141,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 2.2806,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.077369,
+        "baseline_stddev_ms": 0.285351
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:03.390167+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.137398,
+        "stddev_ms": 0.399866,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5631,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.077369,
+        "baseline_stddev_ms": 0.285351
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:03.729291+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.036574,
+        "stddev_ms": 0.001905,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 2.1154,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.077369,
+        "baseline_stddev_ms": 0.285351
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:04.639279+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.152848,
+        "stddev_ms": 0.527836,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.57,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.087129,
+        "baseline_stddev_ms": 0.021336
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:04.991707+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.052964,
+        "stddev_ms": 0.000951,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.6451,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.087129,
+        "baseline_stddev_ms": 0.021336
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:05.318541+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.143748,
+        "stddev_ms": 0.272677,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6061,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.087129,
+        "baseline_stddev_ms": 0.021336
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:05.660604+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.052817,
+        "stddev_ms": 0.001132,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.6496,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.087129,
+        "baseline_stddev_ms": 0.021336
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:06.568626+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.139396,
+        "stddev_ms": 0.00362,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4872,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06791,
+        "baseline_stddev_ms": 0.406624
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:06.926927+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.045679,
+        "stddev_ms": 0.001095,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.4867,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06791,
+        "baseline_stddev_ms": 0.406624
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:07.271766+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.143315,
+        "stddev_ms": 0.526497,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4738,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06791,
+        "baseline_stddev_ms": 0.406624
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:07.586146+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.04558,
+        "stddev_ms": 0.001268,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.4899,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.06791,
+        "baseline_stddev_ms": 0.406624
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:08.476035+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.145715,
+        "stddev_ms": 0.271998,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5218,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076036,
+        "baseline_stddev_ms": 0.01471
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:08.822572+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.048532,
+        "stddev_ms": 0.001038,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.5667,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076036,
+        "baseline_stddev_ms": 0.01471
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:09.162616+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.134724,
+        "stddev_ms": 0.003088,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5644,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076036,
+        "baseline_stddev_ms": 0.01471
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:09.500721+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.048455,
+        "stddev_ms": 0.001022,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.5692,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076036,
+        "baseline_stddev_ms": 0.01471
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:10.421030+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.147667,
+        "stddev_ms": 0.269831,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5168,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076317,
+        "baseline_stddev_ms": 0.022658
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:10.765615+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.055931,
+        "stddev_ms": 0.271275,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3645,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076317,
+        "baseline_stddev_ms": 0.022658
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:11.099820+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.140981,
+        "stddev_ms": 0.270956,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5413,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076317,
+        "baseline_stddev_ms": 0.022658
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:11.461707+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.046894,
+        "stddev_ms": 0.001853,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.6274,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.076317,
+        "baseline_stddev_ms": 0.022658
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:12.446664+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.144401,
+        "stddev_ms": 0.006944,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6881,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.099361,
+        "baseline_stddev_ms": 0.398761
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:12.795784+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.072189,
+        "stddev_ms": 0.279542,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3764,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.099361,
+        "baseline_stddev_ms": 0.398761
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:13.143823+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.139447,
+        "stddev_ms": 0.005392,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.7125,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.099361,
+        "baseline_stddev_ms": 0.398761
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:13.456527+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.061579,
+        "stddev_ms": 0.004386,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.6135,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.099361,
+        "baseline_stddev_ms": 0.398761
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:14.728188+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.138905,
+        "stddev_ms": 0.003331,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6536,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.090784,
+        "baseline_stddev_ms": 0.406798
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:15.078091+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.090384,
+        "stddev_ms": 0.412385,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0044,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.090784,
+        "baseline_stddev_ms": 0.406798
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:15.400477+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.137776,
+        "stddev_ms": 0.003162,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6589,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.090784,
+        "baseline_stddev_ms": 0.406798
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:15.726975+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.08965,
+        "stddev_ms": 0.396583,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0126,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.090784,
+        "baseline_stddev_ms": 0.406798
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:16.664628+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.133279,
+        "stddev_ms": 0.002518,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6888,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.091797,
+        "baseline_stddev_ms": 0.014832
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:16.982997+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.077852,
+        "stddev_ms": 0.001303,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.1791,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.091797,
+        "baseline_stddev_ms": 0.014832
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:17.315638+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.134702,
+        "stddev_ms": 0.010031,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6815,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.091797,
+        "baseline_stddev_ms": 0.014832
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:17.626511+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.07728,
+        "stddev_ms": 0.001355,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1878,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.091797,
+        "baseline_stddev_ms": 0.014832
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:18.574262+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.140443,
+        "stddev_ms": 0.275923,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6731,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.094528,
+        "baseline_stddev_ms": 0.013662
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:18.883591+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.080158,
+        "stddev_ms": 0.001406,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.1793,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.094528,
+        "baseline_stddev_ms": 0.013662
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:19.224864+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.138124,
+        "stddev_ms": 0.002559,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6844,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.094528,
+        "baseline_stddev_ms": 0.013662
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:19.548592+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.079724,
+        "stddev_ms": 0.001428,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1857,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.094528,
+        "baseline_stddev_ms": 0.013662
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:21.067932+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.233482,
+        "stddev_ms": 0.018098,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8772,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.204802,
+        "baseline_stddev_ms": 0.015186
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:21.386110+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.188791,
+        "stddev_ms": 0.004571,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0848,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.204802,
+        "baseline_stddev_ms": 0.015186
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:21.735153+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.229418,
+        "stddev_ms": 0.015765,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8927,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.204802,
+        "baseline_stddev_ms": 0.015186
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:22.059775+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.190268,
+        "stddev_ms": 0.008151,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0764,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.204802,
+        "baseline_stddev_ms": 0.015186
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:23.370634+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.167455,
+        "stddev_ms": 0.002612,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8422,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.14103,
+        "baseline_stddev_ms": 0.002814
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:23.733592+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.139467,
+        "stddev_ms": 0.001594,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0112,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.14103,
+        "baseline_stddev_ms": 0.002814
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:24.036008+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.16724,
+        "stddev_ms": 0.002568,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8433,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.14103,
+        "baseline_stddev_ms": 0.002814
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:24.358266+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.139446,
+        "stddev_ms": 0.002612,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0114,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.14103,
+        "baseline_stddev_ms": 0.002814
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:25.629140+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.198073,
+        "stddev_ms": 0.566111,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.7454,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.147642,
+        "baseline_stddev_ms": 0.004371
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:25.939712+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.152637,
+        "stddev_ms": 0.403977,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.9673,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.147642,
+        "baseline_stddev_ms": 0.004371
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:26.244006+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.182693,
+        "stddev_ms": 0.268956,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8081,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.147642,
+        "baseline_stddev_ms": 0.004371
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:26.550574+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.139442,
+        "stddev_ms": 0.002018,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0588,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.147642,
+        "baseline_stddev_ms": 0.004371
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:27.844642+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.189113,
+        "stddev_ms": 0.269422,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8121,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.153586,
+        "baseline_stddev_ms": 0.003989
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:28.190047+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.141607,
+        "stddev_ms": 0.001699,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0846,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.153586,
+        "baseline_stddev_ms": 0.003989
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:28.519548+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.181025,
+        "stddev_ms": 0.003229,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8484,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.153586,
+        "baseline_stddev_ms": 0.003989
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:28.826008+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.15375,
+        "stddev_ms": 0.395509,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9989,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.153586,
+        "baseline_stddev_ms": 0.003989
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:30.301277+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.210832,
+        "stddev_ms": 0.010531,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9864,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.207967,
+        "baseline_stddev_ms": 0.39672
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:30.779488+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.188821,
+        "stddev_ms": 0.270181,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.1014,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.207967,
+        "baseline_stddev_ms": 0.39672
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:31.176990+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.214745,
+        "stddev_ms": 0.013647,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9684,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.207967,
+        "baseline_stddev_ms": 0.39672
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:31.543358+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.180961,
+        "stddev_ms": 0.013014,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1492,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.207967,
+        "baseline_stddev_ms": 0.39672
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:35.374690+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.572788,
+        "stddev_ms": 0.382864,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 1.0107,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.578915,
+        "baseline_stddev_ms": 0.686853
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:35.699463+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.545746,
+        "stddev_ms": 0.396321,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0608,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.578915,
+        "baseline_stddev_ms": 0.686853
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:36.067138+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.564006,
+        "stddev_ms": 0.270524,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 1.0264,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.578915,
+        "baseline_stddev_ms": 0.686853
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-06-19T06:32:36.396603+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.539627,
+        "stddev_ms": 0.272675,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0728,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.578915,
+        "baseline_stddev_ms": 0.686853
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:39.925865+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.575165,
+        "stddev_ms": 0.402729,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 1.0227,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.588248,
+        "baseline_stddev_ms": 0.693368
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:40.254928+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.546362,
+        "stddev_ms": 0.397131,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0767,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.588248,
+        "baseline_stddev_ms": 0.693368
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:40.673505+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.570817,
+        "stddev_ms": 0.269797,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 1.0305,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.588248,
+        "baseline_stddev_ms": 0.693368
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-06-19T06:32:41.016598+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.544845,
+        "stddev_ms": 0.397757,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0797,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.588248,
+        "baseline_stddev_ms": 0.693368
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:44.481672+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.563489,
+        "stddev_ms": 0.005422,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9906,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.558172,
+        "baseline_stddev_ms": 0.396288
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:44.849780+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.545677,
+        "stddev_ms": 0.396581,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0229,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.558172,
+        "baseline_stddev_ms": 0.396288
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:45.220470+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.562627,
+        "stddev_ms": 0.005753,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9921,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.558172,
+        "baseline_stddev_ms": 0.396288
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-06-19T06:32:45.561769+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.548479,
+        "stddev_ms": 0.525663,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0177,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.558172,
+        "baseline_stddev_ms": 0.396288
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:50.193262+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.794796,
+        "stddev_ms": 0.018166,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.963,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.765381,
+        "baseline_stddev_ms": 0.017571
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:50.560957+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.762618,
+        "stddev_ms": 0.016031,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0036,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.765381,
+        "baseline_stddev_ms": 0.017571
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:50.897018+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.796446,
+        "stddev_ms": 0.018676,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.961,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.765381,
+        "baseline_stddev_ms": 0.017571
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-06-19T06:32:51.675503+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "AMD Instinct MI300X",
+        "gpu_count": 1,
+        "gpu_memory_gb": 206.1,
+        "host_cpu": "AMD EPYC 9474F 48-Core Processor",
+        "host_ram_gb": 2267
+      },
+      "software": {
+        "os": "Linux 6.5.0-28-generic",
+        "driver": "N/A",
+        "framework": "PyTorch",
+        "framework_version": "2.1.2+git70dfd51",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.763283,
+        "stddev_ms": 0.01462,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0027,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.765381,
+        "baseline_stddev_ms": 0.017571
+      }
+    }
+  }
+]

@@ -1,0 +1,28 @@
+Here is a step-by-step plan for our first cuda experiment.
+
+goal: to speed-up execution of the layernorm operation with the following linear layer
+setup: consider a model (like opt-7b) with a linear layer with parameters gamma (element-wise multiplication) and beta (bias) followed immediately by a linear layer with weight matrix F (no residual connection between them)
+
+method: 
+1) the first step is to replace the linear layer weight F by the following matrix: 
+F <- (I - E/n)Gamma*F according to formula (7) in the picture below, where
+n is the hidden dimension
+I is the identity matrix
+E is the matrix of all ones
+Gamma is the diagonal matrix with gamma values on the diagonal
+F is the original weight matrix
+2) second step is to add beta*F to the linear layer bias according to formula (7) below to get the total bias b
+3) third step is to compute the denominator of the layernorm concurrently with the linear layer
+4) final step consists in dividing the linear layer output by the numerator and adding bias b to it.
+
+competitive advantage:
+the method
+1) gives the same output as the sequence of layernorm followed by a linear layer
+2) computes the denominator concurrently with the linear layer and thus does not expose the simd latency.
+
+testing setup: 
+the way to test the aforementioned algorithm would be 
+1) to implement the necessary denominator computation as a simd kernel 
+2) update the static weights of the linear layer
+3) compare the run times of the original model with the altered one.
+
